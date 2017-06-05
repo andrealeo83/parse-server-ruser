@@ -67,6 +67,7 @@ var arrayNwString = new Array;
 //----------------------------------------------//
 
 function getEmailTemplates(lang,type){
+	console.log("\n +++++++++ getEmailTemplates lang:: \n "+lang + "type:: "+type+"\n");
 	var query = new Parse.Query("EmailConfig");
 	query.equalTo("lang", lang);
 	query.equalTo("type", type);
