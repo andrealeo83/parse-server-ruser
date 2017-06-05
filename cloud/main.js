@@ -2394,7 +2394,7 @@ Parse.Cloud.define("mandaEmail", function(request, response) {
 	var Mailgun = require(__dirname + '/myMailModule-1.0.0.js');
 	// console.log(JSON.stringify(Mailgun));
 
-	Mailgun.initialize('postmaster@mg.rukku.it', 'key-7e6356374a29aa0f541ca9c13e7b83bd');
+	Mailgun.initialize('mg.rukku.it', 'key-7e6356374a29aa0f541ca9c13e7b83bd');
 
     Mailgun.sendEmail({
       // to: request.params.target,
