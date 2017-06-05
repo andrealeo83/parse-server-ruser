@@ -2424,6 +2424,8 @@ Parse.Cloud.define("mandaEmail", function(request, response) {
 
 
 Parse.Cloud.define('testGetEmailConfig', function(request, response) {
+	var lang = request.params.lang;
+	var type = request.params.type;
 
 	var query = new Parse.Query("EmailConfig");
 	query.equalTo("lang", lang);
