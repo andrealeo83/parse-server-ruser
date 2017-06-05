@@ -2420,3 +2420,24 @@ Parse.Cloud.define("mandaEmail", function(request, response) {
       }
     });
 });
+
+
+
+Parse.Cloud.define('testGetEmailConfig', function(request, response) {
+
+	var query = new Parse.Query("EmailConfig");
+	query.equalTo("lang", lang);
+	query.equalTo("type", type);
+
+
+	query.find({
+    success: function(result) {
+    	res.success("testGetEmailConfig-success: " + JSON.stringify(result));
+    },
+    error: function(error) {
+    	res.error("testGetEmailConfig-error: " + JSON.stringify(error));
+    }
+  });
+});
+
+
