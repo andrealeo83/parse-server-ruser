@@ -68,7 +68,8 @@
      * @return {Parse.Promise}
      */
     sendEmail: function(params, options) {
-     
+     console.log("params: "+params);
+     console.log("options: "+options);
      console.log("url sendEmail: "+"https://api:" + key + "@" + url + "/" + domain + "/messages");
       return Parse.Cloud.httpRequest({
         method: "POST",
