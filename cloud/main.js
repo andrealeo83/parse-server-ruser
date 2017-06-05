@@ -817,7 +817,7 @@ function sendAllMessage(request){
 		console.log("TYPE_NEW_REQUEST SERVICES");
 		// functionGetAddressesEmail = getListAllEmailProfessional();
 		functionGetAddressesEmail = decodeSubscriberList(subscribersList);
-		console.log("**** functionGetAddressesEmail: "+functionGetAddressesEmail);
+		console.log("**** functionGetAddressesEmail: "+JSON.stringify(functionGetAddressesEmail));
 		listFunctionsToCall.push(functionGetAddressesEmail);
 	}
 	else if(type === TYPE_CANCELED_REQUEST ){
