@@ -2428,8 +2428,8 @@ Parse.Cloud.define('testGetEmailConfig', function(request, response) {
 	var type = "TYPE_NEW_REQUEST";
 
 	var query = new Parse.Query("EmailConfig");
-	query.equalTo("lang", lang);
-	query.equalTo("type", type);
+	// query.equalTo("lang", lang);
+	// query.equalTo("type", type);
 
 
 	query.find({
