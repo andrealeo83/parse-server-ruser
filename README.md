@@ -1,5 +1,7 @@
 # parse-server-example
 
+[![Join the chat at https://gitter.im/parse-server-ruser/Lobby](https://badges.gitter.im/parse-server-ruser/Lobby.svg)](https://gitter.im/parse-server-ruser/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Example project using the [parse-server](https://github.com/ParsePlatform/parse-server) module on Express.
 
 Read the full Parse Server guide here: https://github.com/ParsePlatform/parse-server/wiki/Parse-Server-Guide
